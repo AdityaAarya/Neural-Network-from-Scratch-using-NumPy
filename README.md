@@ -48,21 +48,11 @@ This project demonstrates a complete understanding of neural network fundamental
 ## Setup Instructions
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/neural-network-from-scratch.git
-   cd neural-network-from-scratch
-   ```
-
+  
 2. **Install required packages**
-   ```bash
-   pip install numpy scikit-learn matplotlib
-   ```
-
+  
 3. **Run the notebook**
-   ```bash
-   jupyter notebook neural_network_from_scratch.ipynb
-   ```
-
+  
 ## Usage
 
 ### Quick Start
@@ -119,7 +109,7 @@ print(f"Predicted digit: {prediction[0]}")
 ## Results & Visualizations
 
 ### Training Progress
-![Training Loss](path/to/training_loss_plot.png)
+![Training loss](loss_curve.png)
 
 **Key Insights**:
 - Rapid initial loss reduction (2.27 → 0.10 in first 100 epochs)
@@ -128,7 +118,12 @@ print(f"Predicted digit: {prediction[0]}")
 - No signs of overfitting or underfitting
 
 ### Sample Predictions
-![Sample Predictions](path/to/sample_predictions.png)
+
+![Training Sample](sample_training.png)
+
+
+
+![Sample Predictions](sample_prediction.png)
 
 **Prediction Analysis**:
 - **Correct Predictions**: Clear, well-formed digits recognized accurately
@@ -136,7 +131,7 @@ print(f"Predicted digit: {prediction[0]}")
 - **Confidence Levels**: High softmax probabilities for correct predictions
 
 ### Confusion Matrix
-![Confusion Matrix](path/to/confusion_matrix.png)
+![Confusion Matrix](confusion_matrix_NN.png)
 
 **Classification Insights**:
 - Strong diagonal pattern indicates good classification
@@ -187,14 +182,11 @@ dW1 = X.T @ dZ1 / m       # Input weight gradients
 neural-network-from-scratch/
 │
 ├── README.md                           # Project documentation
-├── neural_network_from_scratch.ipynb   # Main implementation notebook
-├── neural_network_from_scratch.py      # Standalone Python script
-├── images/                             # Generated visualizations
-│   ├── training_loss_plot.png
-│   ├── confusion_matrix.png
-│   ├── sample_predictions.png
-│   └── sample_digits.png
-└── requirements.txt                    # Python dependencies
+├── Neural_Network.ipynb   # Main implementation notebook
+├── training_loss_plot.png
+├── confusion_matrix.png
+├── sample_predictions.png
+└── sample_digits.png
 ```
 
 ## Learning Outcomes
@@ -213,35 +205,6 @@ neural-network-from-scratch/
 - **Mathematical Implementation**: Translating equations to code
 - **Data Visualization**: Matplotlib for comprehensive analysis
 - **Code Documentation**: Clear comments and docstrings
-
-## Future Enhancements
-
-### Potential Improvements
-- **Deep Networks**: Add more hidden layers
-- **Advanced Optimizers**: Implement Adam, RMSprop, or momentum
-- **Regularization**: Add L2 regularization or dropout
-- **Batch Normalization**: Improve training stability
-- **Learning Rate Scheduling**: Adaptive learning rates
-- **Cross-validation**: More robust evaluation methodology
-
-### Extension Ideas
-- **Different Datasets**: CIFAR-10, Fashion-MNIST
-- **Convolutional Layers**: CNN implementation from scratch
-- **Different Architectures**: Autoencoder, multi-layer perceptrons
-- **Performance Optimization**: GPU acceleration with CuPy
-
-## Requirements
-```
-numpy>=1.21.0
-scikit-learn>=1.0.0
-matplotlib>=3.5.0
-jupyter>=1.0.0
-```
-
-## Acknowledgments
-- **sklearn**: For providing the digits dataset
-- **NumPy**: For efficient numerical computations
-- **Matplotlib**: For comprehensive data visualization
 
 ---
 
